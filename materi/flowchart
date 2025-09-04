@@ -1,0 +1,9 @@
+# simuLASI CEK UMUr sim
+print("-mulai-")
+cekumur = input("berapa umur anda?")
+angkaumur = int(cekumur)
+if ("angkaumur >=18"):
+    print("silahkan anda sudah cukup umur")
+else:
+    print("anda masih dibawah umur")
+print("-selesai-")    
