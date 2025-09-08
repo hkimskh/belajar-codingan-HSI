@@ -6,3 +6,4 @@ print("BELAJAR GIT DASAR")
 #git add.
 #git commit -m "isi pesan"
 #git push -u origin main
+#selesai
