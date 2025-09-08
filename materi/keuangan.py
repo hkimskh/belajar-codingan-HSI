@@ -1,6 +1,6 @@
 import csv
 file_path = r"/home/abdulhakim/Dokumen/dev/murajaah-csv/tugaskeuangan.csv"
-h}"with open(file_path, "r") as file_keuangan:
+with open(file_path, "r") as file_keuangan:
     next(file_keuangan)
     read = csv.reader(file_keuangan) 
     list_read =list(read)
