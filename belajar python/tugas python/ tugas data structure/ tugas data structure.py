@@ -12,6 +12,7 @@ RukunIslam = ("Syahadat", "Shalat", "Zakat", "Puasa", "Haji")
 print("Rukun Islam ada 5:")
 for i in range(len(RukunIslam)):
     print(f"{i + 1}. {RukunIslam[i]}")
+    #oke
 
 #belum belajar set
 
