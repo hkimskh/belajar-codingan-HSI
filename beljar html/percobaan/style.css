@@ -1,0 +1,51 @@
+/* Reset dasar */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9fafb;
+  margin: 20px;
+}
+
+/* Kotak seragam */
+.box {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+/* Title section */
+.section-title {
+  padding-left: 10px;
+  border-left: 4px solid #22c55e;
+  margin-bottom: 10px;
+}
+
+/* Foto biasa */
+.photo {
+  border-radius: 12px;
+  max-width: 200px;
+}
+
+/* Avatar (bulat) */
+.avatar {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e5e7eb;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Link hover */
+a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: bold;
+}
+a:hover {
+  color: #9333ea;
+  transition: 0.3s;
+}

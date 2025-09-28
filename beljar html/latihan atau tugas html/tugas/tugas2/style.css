@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;  /* Font utama halaman */
+  background: #f9fafb;             /* Warna latar belakang abu muda */
+  color: #000000;                  /* Warna teks hitam */
+  margin: 100px;                    /* Jarak utk luar halaman */
+  line-height: 1.6;                /* Jarak antar baris teks */
+}
+
+/* biar gak full satu layar */
+.container {
+  max-width: 1500px;   /* batas lebar tengah */
+  margin:  auto;     /* otomatis tengah kiri-kanan */
+  padding: 20px;
+ 
+}
+
+/* Judul utama */
+h1 {
+  color: #1e3a8a;                  /* Warna biru tua untuk h1 */
+}
+
+/* Section title dengan border-left */
+.section-title {
+  padding-left: 10px;              /* jadiin Spasi teks dari garis kiri */
+  border-left: 4px solid gold;  /* ngadain Garis tebal kuning di kiri */
+  color:blue;                  /* Warna teks abis garis nya hijau gelap */
+}
+
+/* Box konten */
+.box {
+  background: #fff;                /* Latar belakang  web nya putiiih */
+  border: 1px solid #e5e7eb;       /* Garis tipis abu-abu muda biar nggak keramean warna*/
+  border-radius: 12px;             /* Sudut kotak melengkung  */
+  padding: 10px;                   /* buat Spasi dalam kotak nya */
+  margin-bottom: 8px;              /* Jarak antar kotak yang ada di atas nya */
+}
+
+/* Foto */
+.photo {
+  border-radius: 50%;              /* Membuat foto SAYA bulat */
+  margin-bottom: 10px;             /* Jarak bawah foto */
+}
+
+/* Avatar */
+.avatar {
+  width: 220px;                    /* Lebar foto */
+  height: 220px;                   /* Tinggi foto */
+  object-fit: cover;               /* Foto menyesuaikan sama kotak  */
+  border-radius: 50%;              /* Membuat bentuk lingkaran */
+  border: 3px solid #e5e7eb;       /* Garis abu ke putihan tipis di sekitar foto samain yang kayak di atas nya */
+}
+
+/* Link */
+a {
+  color: #2563eb;                  /* Warna biru untuk link */
+  text-decoration: none;           /* Menghilangkan garis bawah */
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Table HTML</title>
+    <style>
+        table {
+            width: 50%;
+            /* border collapse gabungkan border jadi 1 */
+            border-collapse: collapse;
+            
+
+        }
+
+        th,
+        td {
+            padding: 6px;
+        }
+
+        th {
+            background-color: gray;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <H1>Belajar Table di HTML</H1>
+    <hr />
+    <!-- attribut border="1" => garis tepi 1pixel -->
+    <table border="1">
+        <!-- tr => buat baris -->
+         <!-- td => buat kolom -->
+        <!-- tr>td*3 : buat struktur baris x 3kolom -->
+        <tr>
+            <td>No</td>
+            <td>Nama Lengkap</td>
+            <td>Asal Kota</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Khosyi</td>
+            <td>Sanggau, Kalbar</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Abdul Hakim</td>
+            <td>Solo, Jawa Tengah</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Juna</td>
+            <td>Planet Bekasi</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Faiz el Harrom</td>
+            <td>planet anomali</td>
+        </tr>
+
+    </table>
+    <br>
+    <!-- standart table di html 5 -->
+
+     <h3>Daftar Belanja</h3>
+     <table border="1" >
+        <thead>
+          <tr>
+            <th>no</th>
+            <th>barang</th>
+            <th>Harga</th>
+
+          </tr>      
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Es Teh Desa</td>
+                <td>Rp 2.500</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>NasPad Kawan Lamo</td>
+                <td>Rp 10.000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Pisang Kembung</td>
+                <td>5000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td><b>Total Pengeluaran</b></td>
+                <td><b>Rp 17.500,-</b></td>
+                
+            </tr>
+        </tfoot>
+     </table>
+
+
+     
+     <br>
+     <h2>Daftar piket</h2>
+     <p>belajar penerapan rowspan dan colspan</p>
+     <table border="1" >
+        <thead>
+            <tr>
+                <th rowspan="2">No</th>
+                <th colspan="7">Pekan 1</th>
+                
+            </tr>
+
+         <tr>
+                
+                <th>senin</th>
+                <th>selasa</th>
+                <th>rabu</th>
+                <th>Kamis</th>
+                <th>jumat</th>
+                <th>sabtu</th>
+                <th>Ahad</th>
+            </tr>    
+
+            <tr>
+                <th>1</th>
+                <th rowspan="2">Gojo</th>
+                <th>Sukuna</th>
+                <th>itadori</th>
+                <th>yuta</th>
+                <th>megumi</th>
+                <th>nobara</th>
+                <th>inumaki</th>
+            </tr>
+
+            <tr>
+                <th>1</th>
+                
+                <th>Sukuna</th>
+                <th>itadori</th>
+                <th>yuta</th>
+                <th>megumi</th>
+                <th>nobara</th>
+                <th>inumaki</th>
+            </tr>
+        </thead>
+     </table>
+
+</body>
+</html>
