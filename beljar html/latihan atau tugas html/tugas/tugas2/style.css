@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;  /* Font utama halaman */
-  background: #f9fafb;             /* Warna latar belakang abu muda */
-  color: #000000;                  /* Warna teks hitam */
+  background: #eceef0;             /* Warna latar belakang abu muda */
+  color: #0f0e0e;                  /* Warna teks hitam */
   margin: 100px;                    /* Jarak utk luar halaman */
   line-height: 1.6;                /* Jarak antar baris teks */
 }
@@ -28,7 +28,7 @@ h1 {
 
 /* Box konten */
 .box {
-  background: #fff;                /* Latar belakang  web nya putiiih */
+  background: #ded5f0;                /* Latar belakang  web nya putiiih */
   border: 1px solid #e5e7eb;       /* Garis tipis abu-abu muda biar nggak keramean warna*/
   border-radius: 12px;             /* Sudut kotak melengkung  */
   padding: 10px;                   /* buat Spasi dalam kotak nya */
@@ -47,7 +47,7 @@ h1 {
   height: 220px;                   /* Tinggi foto */
   object-fit: cover;               /* Foto menyesuaikan sama kotak  */
   border-radius: 50%;              /* Membuat bentuk lingkaran */
-  border: 3px solid #e5e7eb;       /* Garis abu ke putihan tipis di sekitar foto samain yang kayak di atas nya */
+  border: 3px solid #111316;       /* Garis abu ke putihan tipis di sekitar foto samain yang kayak di atas nya */
 }
 
 /* Link */
