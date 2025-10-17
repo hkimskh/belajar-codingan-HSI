@@ -1,0 +1,79 @@
+/* card sebagai layout dasar */
+.card {
+    background-color: gray;
+    box-shadow: 0px 2px 2px rgb(69, 68, 68);
+    padding: 6px;
+    text-align: center;
+}
+
+/* box polos hanya konten */
+#box1 {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    color: white;
+    line-height: 10;
+}
+
+/* box dengan padding */
+#box2 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    color: white;
+    line-height: 10;
+    padding: 12px;  /* mewakili semua sisi padding */
+
+}
+
+/* box dengan padding dan border */
+#box3 {
+    width: 200px;
+    height: 200px;
+    background-color: indigo;
+    color: white;
+    line-height: 10;
+    padding: 10px;  /* mewakili semua sisi padding */
+    border: 5px solid aqua;
+    
+}
+
+/* box dengan padding, border,margin */
+#box4 {
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    color: white;
+    line-height: 10;
+    padding: 10px;  /* mewakili semua sisi padding */
+    border: 5px solid tomato;
+    /* margin: 20px 10px 20px 10px; */
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    
+}
+
+
+/* css position */
+#box5 {
+    width: 200px;
+    height: 200px;
+    background-color: maroon;
+    color: white;
+    line-height: 10;
+
+}
+
+#box6 {
+    width: 200px;
+    height: 200px;
+    background-color: moccasin;
+    color: white;
+    line-height: 10;
+    position: relative;
+    top: 20px;
+    left: 20px;
+
+}

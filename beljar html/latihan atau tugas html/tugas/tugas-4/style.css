@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+@font-face {
+  font-family: hakim;
+  src: url(fonts/Bismillah\ Script.ttf);
+}
+
+.basmalah {
+    text-align: center;
+    
+}
+
+.judul {
+  font-family: 'Cinzel Decorative', serif;
+  background-color: rgb(247, 252, 158);
+  color: rgb(0, 0, 0);
+  height: 100px;
+  text-align: center;
+  margin: 3px 50px 20px 50px;
+  border-radius: 10px;
+  word-spacing: 7px; /* ngasih jarak antar kata  */
+  padding: 45px;
+  text-decoration: underline;
+}
+
+i {
+    letter-spacing: 3px;
+    /* buat ngasih jarak antar huruf */
+}
+
+.note {
+  background-color: rgb(248, 241, 184);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 3px 100px;
+  font-weight: bold; /* buat ketebalan huruf */
+  line-height: 1.5;
+}
+
+
+.judul2 {
+    color: rgb(82, 53, 16);
+}
+
+
+.note, p {
+    text-align: center;
+}
+
+span {
+  color: rgb(126, 87, 1);
+  
+}
+
+.quotes1 {
+  background-color: burlywood;
+  border-left: 7px solid rgb(195, 125, 19);
+  margin: 15px 90px 20px 100px;
+  padding: 15px 0px 15px 15px;
+  /* border-radius: 10px; */
+  
+}
+
+.quotes2 {
+  background-color: rgb(247, 188, 110);
+  border-left: 7px solid rgb(196, 120, 14);
+  margin: 15px 90px 20px 100px;
+  padding: 15px 0px 15px 15px;
+  /* border-radius: 10px; */
+
+}
+
+.penulis {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.hakim {
+  text-align: right;
+  font-family: hakim;
+  
+}
+
+footer {
+  text-align: center;
+}
+
+
+
+
+
+
