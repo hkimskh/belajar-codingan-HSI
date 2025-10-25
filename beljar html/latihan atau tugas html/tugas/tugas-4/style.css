@@ -73,6 +73,7 @@ span {
 .penulis {
   text-align: right;
   text-transform: uppercase;
+  /* besar kecil huruf / jadi kapital *kalo gak salah */
 }
 
 .hakim {
