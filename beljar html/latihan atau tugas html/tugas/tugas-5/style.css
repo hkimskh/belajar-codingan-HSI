@@ -1,0 +1,93 @@
+.container {
+  background-color: lightgray;
+  padding: 5px;
+  border-radius: 9px;
+  box-shadow: 7px 7px 5px grey;
+  margin-top: 3px;
+}
+
+.div {
+  margin: 5px;
+}
+
+.Alert-info {
+  display: flex;
+  background: #f5f7f8;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.Alert-info button {
+  font-size: 12px;
+  background: rgb(128, 128, 244);
+}
+
+.container2 {
+  display: grid;
+  background-color: lightgray;
+  padding: 7px;
+  border-radius: 9px;
+  box-shadow: 7px 7px 5px grey;
+  gap: 10px;
+  margin: 20px 45px;
+  padding: 5px;
+}
+
+.card { 
+  display: flex;
+  background: rgb(230, 224, 224);
+  place-content: center;
+  place-items: center;
+  flex-direction: column;
+  height: 300px;
+  width: 250px;
+  border: 1px solid #a5a3a3;
+  border-radius: 6px;
+  /* biar text di tengah */
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+
+
+}
+
+.flexbox-area {
+  width: 100%;
+  overflow-x: auto;
+  /* wajib flex */
+  display: flex;
+  /* atur arah items nya */
+  /* default = row ( row-reverse, column, column-reverse */
+  justify-content: space-around;
+  flex-wrap: nowrap; /* pastikan ini ada */
+
+  gap: 13px;
+  /* atur posisi horizontal */
+  /* default = flex-start (flex end, center, space-between) */
+  /* justify-content : */
+
+  /* justify-content: center; */
+  /* default = flex-start (flex-end, center, stertch, dll */
+  align-items: center; /*biar rata tengah walu besarnya beda*/
+}
+
+.card-pro-blue {
+    display: flex;
+    text-align: center;
+    align-items: center; /* biar rata tengah walau besarnya beda */
+    justify-content: center;
+    background-color: rgb(181, 179, 179)    ;
+    border: 2px solid blue;
+    height: 350px;
+    width: 300px;
+    border-radius: 6px;
+    flex-direction: column;
+}
+
+
+
+
+
+
+ 
