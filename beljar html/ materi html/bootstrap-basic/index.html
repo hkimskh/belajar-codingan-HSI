@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- load bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- container: memberi jarak kiri-kanan agar tidak mepet -->
+    <div class="container bg-light">
+      <h1 class="text-primary">Hello, world!</h1>
+      <div class="alert alert-warning" role="alert">
+        <strong class="bg-danger border border-danger text-white">
+          Peringatan!
+        </strong>
+        peringatan ada kebakaran bang!!!
+      </div>
+
+      <!-- varian warna /color di bootstrap -->
+      <!-- primary / succes / info / warning / danger -->
+      <button type="button" class="btn btn-success">simpan data</button>
+      <button type="reset" class="btn btn-danger">hapus data</button>
+      <hr />
+
+      <!-- layout responsive -->
+      <!-- 2 kolom 6+6=12 -->
+      <div class="row">
+        <div class="col-6 bg-info"><h2>KOLOM KIRI</h2></div>
+        <div class="col-6 bg-success"><h2>KOLOM KANAN</h2></div>
+      </div>
+      <!-- end row -->
+
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <img
+            class="img-thumbnail"
+            src="https://images.unsplash.com/photo-1527965408463-82ae0731825c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGluZG9uZXNpYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
+          />
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img
+            class="img-thumbnail"
+            src="https://images.unsplash.com/photo-1527965408463-82ae0731825c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGluZG9uZXNpYXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
+          />
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img
+            class="img-thumbnail"
+            src="https://images.unsplash.com/photo-1598723106396-f89827f6aa1a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG11c2xpbXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500"
+          />
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img
+            class="img-thumbnail"
+            src="https://plus.unsplash.com/premium_photo-1678558953671-c0d8a2d00501?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9uZG9rJTIwcGVzYW50cmVufGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
+          />
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <img
+            class="img-thumbnail"
+            src="https://images.unsplash.com/photo-1602827114685-efbb2717da9f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJlbGFkaXJpfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
+          />
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <img
+            class="img-thumbnail"
+            src="https://images.unsplash.com/photo-1603210185603-57fc717c4456?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJlbGFkaXJpfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500"
+          />
+        </div>
+      </div>
+
+      <!-- table -->
+      <hr />
+      <h2 style="text-align: center">Table Interaktif</h2>
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>@social</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- container-fluid: full width 100% -->
+    <!-- <div class="container-fluid bg-danger">  
+        <h1>fluid width 100%</h1>
+    </div> -->
+
+    <!-- load bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

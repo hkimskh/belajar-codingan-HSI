@@ -1,0 +1,593 @@
+
+ .body {
+  background-color: #bbdce5;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23b597f1' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  font-family: 'Poppins', sans-serif; /* ganti font jadi Poppins, kalau gagal pakai sans-serif */
+}
+
+.section-title {
+  padding-left: 10px;               /* kasih jarak teks dari kiri biar nggak nempel garis */
+  border-left: 4px solid #eef208;   /* bikin garis tebal di kiri (aksen) */
+}
+
+.logo {
+  display: block;                   /* biar bisa diposisikan (default img = inline) */
+  margin: 20px auto;                /* auto = rata tengah horizontal, 20px jarak atas bawah */
+  max-width: 100px;                 /* batasi lebar maksimum logo */
+}
+
+.judul {
+  color: #3700ff;                   /* warna teks biru */
+  text-align: center;               /* rata tengah teks */
+}
+
+.keterangan {
+  text-align: center;               /* teks rata tengah */
+  color: rgb(0, 0, 0);                   /* warna abu-abu gelap */
+}
+
+.box {
+  margin: 20px auto;                /* kasih jarak 20px atas-bawah, auto kiri-kanan = ketengah */
+  width: 80%;                       /* lebar box 80% dari layar */
+  padding: 10px;                    /* jarak isi dari tepi box */
+  border: 5px solid #dacdcd;           /* garis tipis abu di sekeliling box */
+  border-radius: 15px;              /* sudut box melengkung */
+  background-color: #daeaf5;           /* latar belakang putih */
+  box-shadow: 0 4px 8px rgb(255, 255, 255);
+  /* 0 = agar bayangan nya tidak pindah 4px = bayangan kebawah 4px 5px = blur 5px */
+}
+
+.avatar {
+  width: 190px;                     /* lebar foto */
+  height: 190px;                    /* tinggi foto, sama dengan width → bentuk bulat */
+  object-fit: cover;                /* foto dipotong biar penuh tanpa distorsi */
+  border-radius: 50%;               /* bulat sempurna */
+  border: 3px solid #080150;        /* garis tipis abu di pinggir foto */
+}
+
+.hr {
+  width: 80%;                       /* garis horizontal setengah lebar halaman */
+  margin: 15px auto;                /* rata tengah + jarak 15px atas bawah */
+  border: none;                     /* hilangkan border default <hr> */
+  height: 1px;                      /* ketebalan garis */
+  background-color: #3700ff;        /* warna biru */
+  border-radius: 5px;               /* ujung garis agak melengkung */
+}
+
+.kelasking {
+  text-align: center;
+}
+
+.arabic {
+  text-align: center;
+  background-color:  #5b5a5a;
+  color: rgb(241, 237, 237);
+  margin: 15px auto;
+  width: 300px;
+  height: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px; /* buat biar text arab ketengah */
+  border-radius: 20px;
+  border: 4px solid #000000;
+  
+}
+
+.back-link {
+  display: inline-block;            /* biar bisa diatur margin, hover dsb */
+  margin-top: 20px;                 /* jarak ke atas */
+  color: #3700ff;                   /* teks biru */
+  text-decoration: none;            /* hilangkan garis bawah default link */
+  font-weight: 500;                 /* agak tebal */
+}
+
+.back-link:hover {
+  text-decoration: underline;       /* pas hover muncul garis bawah */
+}
+
+.navbar {
+  text-align: center;   /* rata tengah */
+  margin: 20px auto;
+}
+
+.navbar .nav-link {
+  display: inline-block; /* biar menu sejajar */
+  margin: 0 5px;         /**/
+}
+
+.nav-link {
+  display: inline-block; /* biar bisa sejajar dan diatur*/
+  padding: 6px /* jarak isi dari tepi box atas bawah */ 16px;  /* jarak isi dari tepi box kiri kanan */
+  border-radius: 20px;       /* bikin bentuk oval/pill */
+  text-decoration: none;
+  font-weight: 500;
+  color: #000000;
+  background-color: #ffffff; /* abu muda */
+  transition: all 0.3s ease;
+  border: 1px solid #000000;
+}
+
+.nav-link:hover {
+  background-color: #2f00ff; /* pas hover agak gelap */
+}
+
+.nav-link.active {
+  background-color: #3700ff; /* menu aktif biru */
+  color: rgb(255, 255, 255);
+  border-color: #3700ff;
+}
+
+.schedule {
+  width: 100%; 
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.schedule th,
+.schedule td {
+  border: 1px solid #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.schedule thead th {
+  background-color: #3700ff; /* biru */
+  color: white;
+  font-weight: 600;
+}
+
+
+.schedule tbody tr:hover {
+  background-color: #ffffff; /* hover efek */
+}
+
+/* === GALERI STYLE === */
+/* Grid galeri desain */
+.galeri-grid {
+  
+  margin: 20px auto;                /* kasih jarak 20px atas-bawah, auto kiri-kanan = ketengah */
+  width: 80%;                       /* lebar box 80% dari layar */
+  padding: 10px;                    /* jarak isi dari tepi box */
+  border: 1px solid #ddd;           /* garis tipis abu di sekeliling box */
+  border-radius: 10px;              /* sudut box melengkung */
+  background-color: #c8daf9;           /* latar belakang putih */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.card {
+  display: inline-block; 
+  width: 220px;          
+  margin: 10px;          /* kasih jarak antar card */
+  vertical-align: top;   /* biar sejajar bagian atasnya */
+  background: #e0dada;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.basmalah {
+  text-align: center;
+  color: rgb(47, 109, 113);
+  
+}
+
+.kece {
+  text-align:center
+}
+
+
+.card p {
+  padding: 10px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Bagian video */
+.video-wrapper {
+  margin: 25px auto;
+  background: #b7dcfa;
+  border-radius: 12px;
+  padding: 2px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  text-align: center;
+  width: 800px;
+  height: 450px;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 340px;
+  border-radius: 10px;
+  border: none;
+}
+/* Form */
+.form-section {
+  background: #c0eff0;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-section h2 {
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 1.5rem;
+}
+
+.form-section p {
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+form {
+  display: block;
+}
+
+form > * {
+  display: block;   /* setiap elemen turun ke bawah */
+  width: 100%;      /* supaya rata */
+  margin-bottom: 12px; 
+}
+
+
+label {
+  font-weight: 500;
+  margin: 10px 0 5px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: 1px solid #e7dddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+.radio-group, .checkbox-group {
+  margin: 8px 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-buttons {
+  text-align: right; /* tombol rata kanan */
+  margin-top: 15px;
+}
+
+.form-buttons button {
+  margin-right: 10px; 
+}
+
+
+.reset-btn, .submit-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.reset-btn {
+  background: #ffffff;
+  color: #000000;
+}
+
+.reset-btn:hover {
+  background: #bac5c5;
+}
+
+.submit-btn {
+  background: #0004ff;
+  color: rgb(255, 255, 255);
+}
+
+.submit-btn:hover {
+  background: #00a2ff;
+} 
+
+/* uigradient */
+/* cssscan */
+/* animate.style */
+/* hover.css */
+/* heroicons */
+
+/* === STYLES DASAR TETAP (kode kamu di atas tetap) === */
+
+/* ============ GALERI RESPONSIVE ============ */
+.galeri-grid {
+  display: grid;                         /* ubah jadi grid */
+   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 1fr = penuh ruang yang tersedia */
+  gap: 15px;                             /* jarak antar card */  /*auto-fit = menyesuaikan jumlah kolom berdasarkan lebar layar */
+  margin: 10px auto;
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #c8daf9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.section-title {
+  padding-left: 10px;               /* kasih jarak teks dari kiri biar nggak nempel garis */
+  border-left: 4px solid #eef208;   /* bikin garis tebal di kiri (aksen) */
+  
+}
+
+.card {
+  background: #e0dada;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+   overflow: hidden; /* buat menyesuaikan agar item gak keluar dari batas kotak  */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 10px;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* ============ NAVBAR RESPONSIVE ============ */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;                /* biar turun otomatis kalau sempit */
+  justify-content: center;        /* tengah */
+  align-items: center;
+  gap: 10px;                      /* jarak antar tombol */
+  margin: 20px auto;
+}
+
+.navbar .nav-link {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  background-color: #2f00ff;
+  color: white;
+}
+
+.nav-link.active {
+  background-color: #3700ff;
+  color: white;
+  border-color: #3700ff;
+}
+
+/* ============ BIODATA SECTION ============ */
+.biodata {
+  background: #daeaf5;
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px 30px;
+  border-radius: 15px;
+  border: 4px solid #c9d6e3;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.biodata h2 {
+  text-align: center;
+  color: #3700ff;
+  margin-bottom: 15px;
+}
+
+.biodata table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.biodata td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.biodata td:first-child {
+  font-weight: 600;
+  color: #000;
+  width: 35%;
+}
+
+
+
+/* ============ FEEDBACK SECTION ============ */
+.feedback {
+  background: #c0eff0;
+  width: 80%;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.feedback h2 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.feedback p {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.feedback form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feedback label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.feedback input,
+.feedback textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.feedback input:focus,
+.feedback textarea:focus {
+  outline: none;
+  border-color: #3700ff;
+  box-shadow: 0 0 6px rgba(55, 0, 255, 0.3);
+}
+
+.feedback button {
+  background-color: #3700ff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: flex-end;
+}
+
+.feedback button:hover {
+  background-color: #00a2ff;
+}
+
+
+/* ============ MEDIA QUERIES ============ */
+
+/* === Tablet (768–1023px) === */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+
+  .galeri-grid {
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .video-wrapper {
+    width: 90%;
+    height: auto;
+  }
+
+  .video-wrapper iframe {
+    height: 300px;
+  }
+
+  .biodata,
+  .feedback {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+
+/* === Smartphone (<599px) === */
+@media screen and (max-width: 767px) {
+
+  .galeri-grid {
+    width: 95%;
+    grid-template-columns: 1fr; /* 1 kolom di hp */
+  }
+
+  .video-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-wrapper iframe {
+    width: 100%;
+    height: 220px;
+  }
+
+  .navbar {
+    flex-direction: column; /* menu atau nav turun ke bawah */
+    gap: 8px;
+  }
+
+  .nav-link {
+    width: 80%;
+    text-align: center;
+  }
+
+  .box, .form-section {
+    width: 95%;
+  }
+
+    .biodata,
+  .feedback {
+    width: 95%;
+    padding: 15px;
+   
+
+  }
+
+  .biodata table,
+  .biodata td {
+    display: block;
+    width: 100%;
+  }
+
+  .biodata td:first-child {
+    font-weight: 600;
+    color: #000;
+    margin-top: 10px;
+  }
+
+  .feedback button {
+    width: 100%;
+    align-self: center;
+  }
+  
+}
+
+
+
+
+
