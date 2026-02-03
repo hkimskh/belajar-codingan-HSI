@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan - Pulang Pergi</title>
+  <style>
+    /* 🌙 Default tema (dark elegan) */
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --accent: #38bdf8;
+      --shadow: rgba(0, 0, 0, 0.4);
+    }
+
+    body.light {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --accent: #2563eb;
+      --shadow: rgba(0, 0, 0, 0.15);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: all 0.4s ease;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, var(--accent), #9333ea);
+      color: white;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 4px 12px var(--shadow);
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    .theme-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      background: var(--card-bg);
+      color: var(--text);
+      box-shadow: 0 2px 8px var(--shadow);
+      transition: all 0.3s ease;
+    }
+
+    .theme-toggle:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px var(--shadow);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 1.6rem;
+    }
+
+    .card p {
+      line-height: 1.6;
+      margin: 1rem 0;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1rem;
+      background: var(--accent);
+      color: white;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+      background: #9333ea;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      background: var(--card-bg);
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      box-shadow: 0 -4px 12px var(--shadow);
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 Pulang - Pergi</h1>
+    <button class="theme-toggle" id="themeToggle">🌞 Light Mode</button>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>Pulang</h2>
+      <p>"Aku tahu sekarang, <i>lebih banyak luka di hati bapakku dibanding di tubuhnya.</i> 
+      <br>Juga mamakku, lebih banyak tangis di hati Mamak dibanding di matanya."
+      <br><br>
+      Sebuah kisah tentang perjalanan <b>pulang</b>, melalui pertarungan demi pertarungan,
+      untuk memeluk erat semua kebencian dan rasa sakit.
+      </p>
+      <a href="https://www.google.co.id/books/edition/PULANG_unedited_version_/qQVnDwAAQBAJ?hl=id" target="_blank">📖 Baca Buku</a>
+    </div>
+
+    <div class="card">
+      <h2>Pergi</h2>
+      <p>Sebuah kisah tentang <b>menemukan tujuan</b>,
+      ke mana hendak <b>pergi,</b> melalui kenangan demi kenangan masa lalu,
+      <br><b>pertarungan hidup-mati</b>, untuk memutuskan ke mana langkah kaki akan dibawa.
+      </p>
+      <a href="https://www.google.co.id/books/edition/PERGI_unedited_version_/qwVnDwAAQBAJ?hl=id" target="_blank">📖 Baca Buku</a>
+    </div>
+
+    <div class="card">
+      <h2>Pulang Pergi</h2>
+      <p>Ada jodoh yang ditemukan lewat <b>tatapan pertama</b>. 
+      <br>Ada persahabatan yang diawali lewat <b>sapa hangat</b>.
+      <br>Bagaimana jika takdir bersama ternyata diawali dengan <b>pertarungan mematikan?</b>
+      </p>
+      <a href="https://www.google.co.id/books/edition/Pulang_pergi/3XPvzgEACAAJ?hl=id" target="_blank">📖 Baca Buku</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 | Latihan Website Interaktif</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById("themeToggle");
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("light");
+      if (document.body.classList.contains("light")) {
+        toggleBtn.textContent = "🌙 Dark Mode";
+      } else {
+        toggleBtn.textContent = "🌞 Light Mode";
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Font Digital';
+    src: url('fonts/digital-7.ttf');
+}
+
+.digital {
+    font-family: 'Font Digital';
+}
+
+/* font dr google (import) */
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&display=swap');
+.fontgoogle {
+    font-family: "BBH Sans Bartle", sans-serif;
+}
+
+
+
+
+/* aturan posisi text */
+.text-tengah {
+    text-align: center;
+}
+
+.text-kiri {
+    text-align: left;
+}
+
+.text-kanan {
+    text-align: right;
+}
+.text-tengah {
+    text-align: center;
+} 
+
+
+/* Atur ketebalan text */
+.tipis{
+    color: chocolate;
+    font-weight: 100;
+    /* atur ukuran */
+    font-size: small;
+}
+
+
+.agak-tebal {
+    color: gold;
+    font-weight: 500;
+    /* atur ukuran */
+    font-size: 30px;
+}
+ .tebal {
+    color: darkgoldenrod;
+    font-weight: 700;
+    font-size: x-large;
+ }
+
+
+ /* aturan text decoration */
+ .button-google {
+    text-decoration: none;
+    background-color: chocolate;
+    color: aliceblue;
+    padding: 4px 6px;
+    border-radius: 6px;
+    border: 4px solid gray;
+ }
+
+ /* atur jark */
+
+ .pendek {
+    line-height: 0,8;
+    background-color: coral;
+ }
+
+ .tinggi {
+    line-height: 2;
+    background-color: palevioletred;
+ }
+
+ /* atur jarak antar huruf*/
+ .rapat {
+    letter-spacing: -2px;
+    background-color: coral;
+ }
+ .renggang {
+    letter-spacing: 6px;
+    background-color: burlywood;
+    border-radius: 4px;
+ }
+
+ /* atur jarak antar text */
+
+ .dekat {
+    word-spacing: -3px;
+    background-color: burlywood;
+    border-radius: 4px;
+ }
+
+ .jauh {
+    word-spacing: 6px;
+    background-color: rgb(213, 138, 39);
+    border-radius: 4px;
+ }
+
+

@@ -1,0 +1,21 @@
+
+
+umur = int(input("masukkan umurmu:"))
+if umur >= 18 and umur <= 70: 
+    print("kamu sudah dewasa")
+elif umur >= 10 and umur <= 18:
+    print("kamu di bawah umur deck") 
+elif umur >= 100:
+     print("meh mati po?")
+else: 
+    print("masih bayi") 
+#mengganti str ke integer
+umur = int(input("masukkan umurmu"))
+if umur >18:
+    print("kamu sudah cukup umur")
+else:
+    print("kamu dibawah umur")
+            
+#
+
+

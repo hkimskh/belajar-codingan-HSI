@@ -1,0 +1,67 @@
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 250px;
+  width: 250px;
+  border: 2px dashed #333;
+  border-radius: 6px;
+}
+
+.flex-area {
+  display: flex;
+  gap: 20px;
+  
+}
+
+header {
+  text-align: center;
+  background: indigo;
+}
+
+header h1,
+header p {
+  color: white;
+}
+
+nav {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+nav ul {
+  gap: 12px;
+}
+
+nav ul li a {
+  background: #812abf;
+  color: white;
+  padding: 6px 20px;
+ 
+}
+
+
+
+/* ukuran 1024px => desktop++ */
+@media screen and (min-width: 1024px) {
+  /* masukkan tag / target selector */
+  .header{ background: blue;}
+}
+
+/* ukuran 768-1023px => tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* masukkan tag / target selector */
+  .header{ background: pink;}
+}
+
+/* ukuran max 767px => smartphone */
+@media screen and (max-width: 767px) {
+  /* masukkan tag / target selector */
+  .header{ background: purple;}
+}
+
+	
+
+  

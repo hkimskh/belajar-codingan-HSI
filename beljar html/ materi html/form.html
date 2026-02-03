@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- data-theme="" buat filter dark  atu light-->
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 FORM</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+</head>
+<body>
+    <main class="container">
+    <h1>Belajar HTML 5 Form</h1>
+    <hr />
+    <h3>input</h3>
+    <form>
+        <!-- input: untuk kolom input serbaguna -->
+         <!-- tips shortcut: input:[typenya] -->
+          <div>
+          <label for="namalengkap">Nama Lengkap</label>
+         <input type="text" name="nama_lengkap" id="namalengkap">
+         <!-- for dan id itu buat nyambungin kotak input dan nama nya -->
+          <!-- for itu terhubung dgn id -->
+        </div>
+        <br />
+          <div>
+          <label for="Umur">Umur</label>
+         <input type="number" name="Umur" id="Umur">
+         
+        </div>
+        <br>
+        <div>
+          <label for="tgllahir">Tanggal Lahir</label>
+         <input type="date" name="Tanggal Lahir" id="tgllahir">
+        </div>
+
+        <!-- email -->
+         <div>
+         <label for="alamat email">Alamat email</label>
+         <input type="email" name="email" id="alamat email">
+        </div>
+         <!-- password -->
+         <div>
+         <label for="password">password</label>
+         <input type="password" name="password" id="password">
+        </div>
+
+        <!-- jenis kelamin tipe= radio -->
+         <p>Jenis kelamin</p>
+         <div>
+         
+         <input type="radio" name="jenis kelamin" id="laki-laki">
+         <label for="laki-laki">laki-laki</label>
+        
+        <input type="radio" name="jenis kelamin" id="perempuan">
+        <label for="perempuan">perempuan</label>
+
+        <br><br><br>
+        </div>
+
+        <!-- checkbox -->
+        <div>
+         <p>minat bahasa</p>
+         <input type="checkbox" name="minat" id="english">
+         <label for="english">english</label>
+        
+        <input type="checkbox" name="minat" id="arabic">
+        <label for="arabic">arabic</label>
+        
+        <br><br><br>
+        </div>
+
+        <div>
+            <label for="asal daerah">Asal daerah</label>
+            <select name="" id=""></select>
+        </div>
+        <!-- action button -->
+         
+         <div class="grid">
+         <button type="reset">Batal</button>
+         <button type="submit">Simpan</button>
+         
+         </div>
+    </form>
+    </main>
+</body>
+</html>
