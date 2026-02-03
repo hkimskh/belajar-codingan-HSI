@@ -9,7 +9,7 @@ class Hero:
         self.hp = hp
         self.type = hero_type
         self.max_hp = hp
-        print(f"✨ {self.name} [{self.job}] memasuki arena!!!")
+        print(f"✨ {self.name} [{self.job}] memasuki arena!!")
 
 
         # - cek hero masih hidup
