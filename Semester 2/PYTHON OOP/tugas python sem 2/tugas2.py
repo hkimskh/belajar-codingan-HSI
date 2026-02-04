@@ -71,7 +71,7 @@ class Hero:
             print(f"💀 {self.name} sudah tereliminasi, {self.name} tidak bisa ngeheal !!!")
             
         # - heal sesuai role
-        if self.job == "HEALAER":
+        if self.job == "HEALER":
             self.hp += ngeheal * 2
             print(f"❤️ {self.name} melakukan heal sebesar {ngeheal*2} HP")
 
@@ -83,7 +83,7 @@ class Hero:
 
 dyroth = Hero("DYROTH", "FIHTER", 100, "HERO")
 angela = Hero("ANGELA", "MAGE", 80, "HERO")
-estes = Hero("ESTES", "HEALAER", 80, "HERO")
+estes = Hero("ESTES", "HEALER", 80, "HERO")
 hayabusa = Hero("HAYABUSA", "ASSASSIN", 120, "HERO")
 
 
